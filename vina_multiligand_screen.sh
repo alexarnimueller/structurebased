@@ -28,3 +28,5 @@ for f in ligand_*.pdb; do
 done
 
 mv runlog.txt energies.txt
+sed -i -e 's/  */\t/g' energies.txt
+
